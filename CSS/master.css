@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 25px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main {
+  background-color: white;
+  flex: 1;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgb(89 81 190 / 18%);
+}
+
+main .bg {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin: 32px 0 17px;
+  font-size: 25px;
+}
+
+.title p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin: 20px 40px 28px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .plan {
+    margin: 20px 25px 25px;
+  }
+}
+
+.plan img {
+  width: 42px;
+  height: 42px;
+}
+
+.plan .price {
+  margin-left: 20px;
+}
+
+.plan .price h4 {
+  margin: 0 0 5px;
+}
+
+.plan .price span {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.plan a {
+  margin-left: auto;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.pay {
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  margin: 0 40px;
+  color: hsl(225, 100%, 98%);
+  padding: 14px 0;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 16px 15px rgb(56 41 224 / 20%);
+  transition: 0.3s;
+}
+
+.pay:hover {
+  background-color: hsl(245deg 66.55% 42.46%);
+}
+
+.cancel {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 30px auto 40px;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  cursor: pointer;
+}
