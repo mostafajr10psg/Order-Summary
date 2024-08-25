@@ -12,10 +12,11 @@ body {
   align-items: center;
 }
 
-.main-bg {
+body > img {
   position: absolute;
   top: 0;
   max-width: 100%;
+  z-index: -1;
 }
 
 main {
@@ -74,7 +75,7 @@ main .bg {
   margin-left: 20px;
 }
 
-.plan .price h3 {
+.plan .price h2 {
   margin: 0 0 5px;
   font-size: 16px;
 }
