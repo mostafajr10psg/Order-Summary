@@ -3,7 +3,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 25px;
   font-family: "Red Hat Display", sans-serif;
   background-color: hsl(225, 100%, 94%);
@@ -15,7 +15,7 @@ body {
 .main-bg {
   position: absolute;
   top: 0;
-  z-index: -1;
+  max-width: 100%;
 }
 
 main {
@@ -74,13 +74,15 @@ main .bg {
   margin-left: 20px;
 }
 
-.plan .price h4 {
+.plan .price h3 {
   margin: 0 0 5px;
+  font-size: 16px;
 }
 
 .plan .price span {
   color: hsl(224, 23%, 55%);
   font-weight: 500;
+  font-size: 15px;
 }
 
 .plan a {
